@@ -1,0 +1,153 @@
+:root {
+  --gap: 12px;
+  --radius: 12px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  background: #f7f7fb;
+  color: #111;
+}
+.header {
+  background: #111827;
+  color: #fff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 12px;
+}
+.container {
+  max-width: 980px;
+  margin: 24px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: top;
+}
+.table th {
+  background: #fafafa;
+}
+.actions a,
+.actions button {
+  margin-right: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+input[type="file"] {
+  width: 100%;
+}
+.button {
+  background: #111827;
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.button.secondary {
+  background: #4b5563;
+}
+.meta {
+  color: #555;
+  font-size: 12px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+.form-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.badge.active {
+  background: #def7ec;
+  color: #03543f;
+}
+.badge.inactive {
+  background: #fde8e8;
+  color: #9b1c1c;
+}
+.pagination {
+  margin-top: 12px;
+}
+.pagination a {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 6px;
+}
+.flash {
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.flash.success {
+  background: #ecfdf5;
+  color: #065f46;
+}
+.flash.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.searchbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.confirm-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 360px;
+  width: 90%;
+}
